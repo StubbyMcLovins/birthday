@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tommy's Birthday Extravaganza · June 17, 2026</title>
+<meta name="description" content="You're invited! Tommy's Birthday Extravaganza, June 17, 2026 at 6:00 PM. Cookout, campfire, good times.">
+<meta property="og:title" content="Tommy's Birthday Extravaganza">
+<meta property="og:description" content="June 17, 2026 · 6:00 PM · Do not miss.">
+<meta property="og:type" content="website">
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: #1a0f2e;
+    font-family: Georgia, "Times New Roman", serif;
+    min-height: 100vh;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .card {
+    width: 100%;
+    max-width: 680px;
+  }
+  .invite-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 24px;
+    overflow: hidden;
+  }
+  .countdown-box {
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid rgba(255, 224, 102, 0.4);
+    border-radius: 16px;
+    margin: 16px 0;
+    padding: 20px 12px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+  }
+  .countdown-label {
+    color: #FFE066;
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+  .countdown-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+  .cd-cell { text-align: center; }
+  .cd-num {
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .cd-unit {
+    color: #FFE066;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-top: 4px;
+    font-weight: 700;
+  }
+  .rsvp-section {
+    text-align: center;
+    margin-top: 16px;
+  }
+  .rsvp-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #FF6B35 0%, #EF476F 100%);
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 18px 36px;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 20px rgba(239, 71, 111, 0.4);
+    transition: transform 0.2s;
+    font-family: Georgia, serif;
+  }
+  .rsvp-btn:active { transform: scale(0.96); }
+  .rsvp-sub {
+    color: #FFE066;
+    font-size: 14px;
+    margin-top: 12px;
+    letter-spacing: 1px;
+  }
+  .rsvp-phone {
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-top: 6px;
+    letter-spacing: 1px;
+    font-weight: 700;
+  }
+  @media (max-width: 480px) {
+    body { padding: 8px; }
+    .cd-num { font-size: 28px; }
+    .rsvp-btn { padding: 16px 28px; font-size: 18px; }
+  }
+</style>
+</head>
+<body>
+<div class="card">
+
+<svg class="invite-svg" viewBox="0 0 680 900" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Tommy's birthday extravaganza invitation</title>
+<desc>Animated invitation showing Tommy with curly hair grilling in a chef hat and apron, with string lights, campfire, picnic table, cooler, and confetti.</desc>
+
+<defs>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#FFB347"/>
+<stop offset="50%" stop-color="#FF7E5F"/>
+<stop offset="100%" stop-color="#6A4C93"/>
+</linearGradient>
+<linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#FFE066"/>
+<stop offset="100%" stop-color="#FF9F1C"/>
+</linearGradient>
+<radialGradient id="emberGlow" cx="0.5" cy="0.5" r="0.5">
+<stop offset="0%" stop-color="#FFD93D" stop-opacity="0.9"/>
+<stop offset="100%" stop-color="#FF6B35" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="bulbGlow" cx="0.5" cy="0.5" r="0.5">
+<stop offset="0%" stop-color="#FFE066" stop-opacity="0.9"/>
+<stop offset="100%" stop-color="#FFE066" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="campfireGlow" cx="0.5" cy="0.5" r="0.5">
+<stop offset="0%" stop-color="#FF9F1C" stop-opacity="0.5"/>
+<stop offset="100%" stop-color="#FF6B35" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="cardClip">
+<rect x="20" y="20" width="640" height="860" rx="24"/>
+</clipPath>
+</defs>
+
+<rect x="20" y="20" width="640" height="860" rx="24" fill="url(#sky)"/>
+
+<g clip-path="url(#cardClip)">
+
+<circle cx="500" cy="240" r="70" fill="url(#sun)" opacity="0.9">
+<animate attributeName="r" values="70;75;70" dur="4s" repeatCount="indefinite"/>
+</circle>
+
+<g opacity="0.5">
+<circle cx="120" cy="120" r="1.5" fill="#FFFFFF"><animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/></circle>
+<circle cx="200" cy="80" r="1" fill="#FFFFFF"><animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite"/></circle>
+<circle cx="350" cy="100" r="1.5" fill="#FFFFFF"><animate attributeName="opacity" values="0.5;1;0.5" dur="3.5s" repeatCount="indefinite"/></circle>
+<circle cx="600" cy="140" r="1" fill="#FFFFFF"><animate attributeName="opacity" values="1;0.4;1" dur="2.8s" repeatCount="indefinite"/></circle>
+<circle cx="80" cy="200" r="1" fill="#FFFFFF"><animate attributeName="opacity" values="0.4;1;0.4" dur="3.2s" repeatCount="indefinite"/></circle>
+</g>
+
+<!-- Title -->
+<g font-family="Georgia, serif">
+<text x="340" y="105" text-anchor="middle" font-size="44" font-weight="700" fill="#FFFFFF" letter-spacing="2">TOMMY'S</text>
+<text x="340" y="155" text-anchor="middle" font-size="30" font-weight="400" fill="#FFE066" font-style="italic">Birthday</text>
+<text x="340" y="200" text-anchor="middle" font-size="40" font-weight="700" fill="#FFFFFF" letter-spacing="3">EXTRAVAGANZA!</text>
+</g>
+
+<!-- String lights swooping across -->
+<g>
+<path d="M 40 250 Q 340 295 640 250" stroke="#3D2818" stroke-width="1.5" fill="none"/>
+<g>
+<line x1="100" y1="263" x2="100" y2="273" stroke="#3D2818" stroke-width="1"/>
+<circle cx="100" cy="277" r="5" fill="#FFE066"/>
+<circle cx="100" cy="277" r="11" fill="url(#bulbGlow)"><animate attributeName="r" values="11;14;11" dur="2s" repeatCount="indefinite"/></circle>
+</g>
+<g>
+<line x1="180" y1="273" x2="180" y2="283" stroke="#3D2818" stroke-width="1"/>
+<circle cx="180" cy="287" r="5" fill="#FF9F1C"/>
+<circle cx="180" cy="287" r="11" fill="url(#bulbGlow)" opacity="0.7"><animate attributeName="r" values="11;15;11" dur="2.3s" repeatCount="indefinite"/></circle>
+</g>
+<g>
+<line x1="260" y1="282" x2="260" y2="292" stroke="#3D2818" stroke-width="1"/>
+<circle cx="260" cy="296" r="5" fill="#FFE066"/>
+<circle cx="260" cy="296" r="11" fill="url(#bulbGlow)"><animate attributeName="r" values="11;14;11" dur="1.9s" repeatCount="indefinite"/></circle>
+</g>
+<g>
+<line x1="340" y1="287" x2="340" y2="297" stroke="#3D2818" stroke-width="1"/>
+<circle cx="340" cy="301" r="5" fill="#EF476F"/>
+<circle cx="340" cy="301" r="11" fill="url(#bulbGlow)" opacity="0.6"><animate attributeName="r" values="11;15;11" dur="2.1s" repeatCount="indefinite"/></circle>
+</g>
+<g>
+<line x1="420" y1="284" x2="420" y2="294" stroke="#3D2818" stroke-width="1"/>
+<circle cx="420" cy="298" r="5" fill="#FFE066"/>
+<circle cx="420" cy="298" r="11" fill="url(#bulbGlow)"><animate attributeName="r" values="11;14;11" dur="2.4s" repeatCount="indefinite"/></circle>
+</g>
+<g>
+<line x1="500" y1="277" x2="500" y2="287" stroke="#3D2818" stroke-width="1"/>
+<circle cx="500" cy="291" r="5" fill="#06D6A0"/>
+<circle cx="500" cy="291" r="11" fill="url(#bulbGlow)" opacity="0.6"><animate attributeName="r" values="11;15;11" dur="2s" repeatCount="indefinite"/></circle>
+</g>
+<g>
+<line x1="580" y1="265" x2="580" y2="275" stroke="#3D2818" stroke-width="1"/>
+<circle cx="580" cy="279" r="5" fill="#FF9F1C"/>
+<circle cx="580" cy="279" r="11" fill="url(#bulbGlow)"><animate attributeName="r" values="11;14;11" dur="2.2s" repeatCount="indefinite"/></circle>
+</g>
+</g>
+
+<!-- Date and tagline -->
+<g font-family="Georgia, serif">
+<text x="340" y="360" text-anchor="middle" font-size="26" font-weight="700" fill="#FFFFFF">JUNE 20, 2026 · 6:00 PM</text>
+<text x="340" y="395" text-anchor="middle" font-size="20" font-weight="500" fill="#FFE066" font-style="italic">Good food. Good friends.</text>
+<text x="340" y="425" text-anchor="middle" font-size="20" font-weight="500" fill="#FFE066" font-style="italic">A grill master at work.</text>
+<text x="340" y="475" text-anchor="middle" font-size="32" font-weight="700" fill="#FFFFFF" letter-spacing="3">
+DO NOT MISS.
+<animate attributeName="opacity" values="1;0.7;1" dur="1.8s" repeatCount="indefinite"/>
+</text>
+</g>
+
+<!-- Ground shadow -->
+<ellipse cx="340" cy="780" rx="280" ry="12" fill="#3D2818" opacity="0.3"/>
+
+<!-- Campfire (background, left) -->
+<g transform="translate(80, 700)">
+<ellipse cx="40" cy="55" rx="35" ry="5" fill="#1a0f2e" opacity="0.4"/>
+<ellipse cx="40" cy="50" rx="25" ry="4" fill="#3D2818"/>
+<ellipse cx="28" cy="48" rx="13" ry="3" fill="#5A3A1B"/>
+<ellipse cx="50" cy="49" rx="14" ry="3" fill="#5A3A1B"/>
+<ellipse cx="40" cy="46" rx="18" ry="2.5" fill="#7A4A1F"/>
+
+<g>
+<ellipse cx="34" cy="35" rx="9" ry="13" fill="#FF9F1C">
+<animate attributeName="ry" values="13;17;13" dur="0.8s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="35;32;35" dur="0.8s" repeatCount="indefinite"/>
+</ellipse>
+<ellipse cx="44" cy="33" rx="8" ry="15" fill="#FFD93D">
+<animate attributeName="ry" values="15;19;15" dur="0.9s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="33;29;33" dur="0.9s" repeatCount="indefinite"/>
+</ellipse>
+<ellipse cx="40" cy="37" rx="5" ry="11" fill="#FF6B35">
+<animate attributeName="ry" values="11;15;11" dur="0.7s" repeatCount="indefinite"/>
+<animate attributeName="cy" values="37;34;37" dur="0.7s" repeatCount="indefinite"/>
+</ellipse>
+<ellipse cx="40" cy="40" rx="3" ry="7" fill="#FFE066">
+<animate attributeName="ry" values="7;11;7" dur="0.6s" repeatCount="indefinite"/>
+</ellipse>
+</g>
+
+<ellipse cx="40" cy="35" rx="40" ry="22" fill="url(#campfireGlow)">
+<animate attributeName="opacity" values="0.6;0.9;0.6" dur="2s" repeatCount="indefinite"/>
+</ellipse>
+
+<g>
+<circle cx="32" cy="20" r="1.5" fill="#FFE066">
+<animate attributeName="cy" values="20;-20;-50" dur="2.5s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0.5;0" dur="2.5s" repeatCount="indefinite"/>
+</circle>
+<circle cx="48" cy="15" r="1.5" fill="#FF9F1C">
+<animate attributeName="cy" values="15;-25;-55" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0.5;0" dur="3s" repeatCount="indefinite"/>
+</circle>
+<circle cx="40" cy="10" r="1" fill="#FFD93D">
+<animate attributeName="cy" values="10;-30;-60" dur="2.2s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="1;0.5;0" dur="2.2s" repeatCount="indefinite"/>
+</circle>
+</g>
+</g>
+
+<!-- Picnic table (background, right) -->
+<g transform="translate(440, 700)">
+<rect x="0" y="40" width="160" height="8" fill="#8B6F47"/>
+<rect x="0" y="40" width="160" height="2.5" fill="#A0825A"/>
+<rect x="8" y="48" width="5" height="40" fill="#5A3A1B"/>
+<rect x="147" y="48" width="5" height="40" fill="#5A3A1B"/>
+<rect x="0" y="25" width="160" height="5" fill="#8B6F47"/>
+<rect x="-4" y="30" width="5" height="11" fill="#5A3A1B"/>
+<rect x="159" y="30" width="5" height="11" fill="#5A3A1B"/>
+
+<rect x="40" y="34" width="12" height="6" fill="#FFFFFF" opacity="0.7"/>
+<rect x="95" y="34" width="12" height="6" fill="#FFD93D" opacity="0.85"/>
+<circle cx="130" cy="37" r="4" fill="#E63946"/>
+</g>
+
+<!-- Cooler (foreground, far right) -->
+<g transform="translate(560, 720)">
+<ellipse cx="40" cy="100" rx="40" ry="5" fill="#1a0f2e" opacity="0.4"/>
+<rect x="10" y="40" width="60" height="42" rx="5" fill="#E63946"/>
+<rect x="10" y="40" width="60" height="14" rx="5" fill="#FFFFFF"/>
+<rect x="10" y="52" width="60" height="4" fill="#1D3557"/>
+<rect x="22" y="36" width="36" height="6" rx="2" fill="#C92A36"/>
+<rect x="32" y="82" width="16" height="14" fill="#3D2818"/>
+<text x="40" y="68" text-anchor="middle" font-size="8" font-weight="700" fill="#1D3557" font-family="Georgia, serif">DRINKS</text>
+
+<!-- Bottle peeking out -->
+<g transform="translate(72, 32)">
+<rect x="0" y="0" width="5" height="12" rx="1" fill="#06D6A0">
+<animateTransform attributeName="transform" type="rotate" values="0 2.5 6;-12 2.5 6;0 2.5 6" dur="3s" repeatCount="indefinite"/>
+</rect>
+</g>
+</g>
+
+<!-- Grill -->
+<g transform="translate(280, 540)">
+<line x1="50" y1="170" x2="80" y2="120" stroke="#3D2818" stroke-width="14" stroke-linecap="round"/>
+<rect x="35" y="120" width="80" height="60" rx="8" fill="#2C2C2C"/>
+<rect x="25" y="115" width="100" height="12" rx="3" fill="#1A1A1A"/>
+<rect x="40" y="135" width="70" height="40" rx="3" fill="#0F0F0F"/>
+
+<g>
+<line x1="45" y1="148" x2="105" y2="148" stroke="#444" stroke-width="2"/>
+<line x1="45" y1="158" x2="105" y2="158" stroke="#444" stroke-width="2"/>
+<line x1="45" y1="168" x2="105" y2="168" stroke="#444" stroke-width="2"/>
+</g>
+
+<ellipse cx="55" cy="153" rx="11" ry="5" fill="#7A3F1A">
+<animate attributeName="cy" values="153;151;153" dur="1s" repeatCount="indefinite"/>
+</ellipse>
+<ellipse cx="78" cy="153" rx="13" ry="6" fill="#8B4513"/>
+<ellipse cx="98" cy="153" rx="9" ry="4" fill="#7A3F1A">
+<animate attributeName="cy" values="153;151;153" dur="1.2s" repeatCount="indefinite"/>
+</ellipse>
+
+<g opacity="0.7">
+<ellipse cx="55" cy="125" rx="18" ry="9" fill="#FF6B35">
+<animate attributeName="opacity" values="0.7;1;0.7" dur="1.5s" repeatCount="indefinite"/>
+<animate attributeName="ry" values="9;13;9" dur="1.5s" repeatCount="indefinite"/>
+</ellipse>
+<ellipse cx="78" cy="123" rx="20" ry="11" fill="#FFB347">
+<animate attributeName="opacity" values="1;0.6;1" dur="1.3s" repeatCount="indefinite"/>
+<animate attributeName="ry" values="11;15;11" dur="1.3s" repeatCount="indefinite"/>
+</ellipse>
+<ellipse cx="98" cy="125" rx="16" ry="8" fill="#FF6B35">
+<animate attributeName="opacity" values="0.8;1;0.8" dur="1.7s" repeatCount="indefinite"/>
+<animate attributeName="ry" values="8;12;8" dur="1.7s" repeatCount="indefinite"/>
+</ellipse>
+</g>
+
+<g>
+<ellipse cx="55" cy="95" rx="14" ry="18" fill="#FFFFFF" opacity="0.6">
+<animate attributeName="cy" values="95;55;25" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0.6;0.3;0" dur="3s" repeatCount="indefinite"/>
+<animate attributeName="rx" values="14;24;34" dur="3s" repeatCount="indefinite"/>
+</ellipse>
+<ellipse cx="80" cy="85" rx="16" ry="20" fill="#FFFFFF" opacity="0.5">
+<animate attributeName="cy" values="85;45;15" dur="3.5s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0.5;0.2;0" dur="3.5s" repeatCount="indefinite"/>
+<animate attributeName="rx" values="16;26;36" dur="3.5s" repeatCount="indefinite"/>
+</ellipse>
+<ellipse cx="100" cy="95" rx="13" ry="17" fill="#FFFFFF" opacity="0.5">
+<animate attributeName="cy" values="95;55;25" dur="2.8s" repeatCount="indefinite"/>
+<animate attributeName="opacity" values="0.5;0.3;0" dur="2.8s" repeatCount="indefinite"/>
+<animate attributeName="rx" values="13;23;33" dur="2.8s" repeatCount="indefinite"/>
+</ellipse>
+</g>
+
+<line x1="0" y1="180" x2="0" y2="220" stroke="#1A1A1A" stroke-width="4"/>
+<line x1="120" y1="180" x2="120" y2="220" stroke="#1A1A1A" stroke-width="4"/>
+</g>
+
+<!-- Tommy character -->
+<g transform="translate(280, 470)">
+
+<!-- Body / shirt (dark T behind apron) -->
+<path d="M 45 115 L 105 115 L 110 200 L 40 200 Z" fill="#2D5A87"/>
+
+<!-- Apron strings going around back of neck -->
+<line x1="58" y1="115" x2="68" y2="100" stroke="#FFFFFF" stroke-width="2"/>
+<line x1="92" y1="115" x2="82" y2="100" stroke="#FFFFFF" stroke-width="2"/>
+
+<!-- Apron body -->
+<g>
+<!-- Apron bib (rounded top) -->
+<path d="M 58 115 Q 75 110 92 115 L 98 200 L 52 200 Z" fill="#FFFFFF"/>
+<!-- Apron pocket -->
+<rect x="62" y="160" width="26" height="14" rx="2" fill="none" stroke="#C8956D" stroke-width="1.2"/>
+<!-- Apron text -->
+<text x="75" y="140" text-anchor="middle" font-size="8" font-weight="700" fill="#E63946" font-family="Georgia, serif">GRILL</text>
+<text x="75" y="152" text-anchor="middle" font-size="8" font-weight="700" fill="#E63946" font-family="Georgia, serif">MASTER</text>
+<!-- Apron waist tie -->
+<rect x="48" y="178" width="54" height="4" fill="#E63946"/>
+<rect x="38" y="180" width="12" height="4" fill="#E63946"/>
+<rect x="100" y="180" width="12" height="4" fill="#E63946"/>
+</g>
+
+<!-- Left arm (toward grill, holding tongs handle off-screen) -->
+<g>
+<line x1="50" y1="125" x2="-10" y2="155" stroke="#C8956D" stroke-width="10" stroke-linecap="round"/>
+<circle cx="-10" cy="155" r="8" fill="#C8956D"/>
+</g>
+
+<!-- Right arm with spatula -->
+<g>
+<line x1="100" y1="125" x2="145" y2="155" stroke="#C8956D" stroke-width="10" stroke-linecap="round">
+<animate attributeName="y2" values="155;140;155" dur="1.2s" repeatCount="indefinite"/>
+</line>
+<!-- Hand -->
+<circle cx="145" cy="155" r="6" fill="#C8956D"/>
+<!-- Spatula -->
+<g>
+<animateTransform attributeName="transform" type="rotate" values="0 145 155; -15 145 155; 0 145 155" dur="1.2s" repeatCount="indefinite"/>
+<!-- Handle -->
+<rect x="143" y="135" width="4" height="20" fill="#5A3A1B"/>
+<!-- Metal head -->
+<rect x="138" y="125" width="14" height="12" rx="1" fill="#C0C0C0"/>
+<rect x="138" y="125" width="14" height="2" fill="#A0A0A0"/>
+</g>
+</g>
+
+<!-- Head -->
+<g>
+<!-- Face -->
+<ellipse cx="75" cy="80" rx="28" ry="32" fill="#C8956D"/>
+
+<!-- Curly hair (under hat) -->
+<g fill="#3D2818">
+<circle cx="50" cy="65" r="8"/>
+<circle cx="100" cy="65" r="8"/>
+<circle cx="48" cy="75" r="7"/>
+<circle cx="102" cy="75" r="7"/>
+<circle cx="46" cy="85" r="6"/>
+<circle cx="104" cy="85" r="6"/>
+</g>
+
+<!-- Eyes -->
+<ellipse cx="65" cy="78" rx="2.5" ry="3" fill="#1A1A1A"/>
+<ellipse cx="85" cy="78" rx="2.5" ry="3" fill="#1A1A1A"/>
+<ellipse cx="65" cy="76" rx="0.8" ry="1" fill="#FFFFFF"/>
+<ellipse cx="85" cy="76" rx="0.8" ry="1" fill="#FFFFFF"/>
+
+<!-- Eyebrows -->
+<path d="M 60 73 Q 65 70 70 73" stroke="#3D2818" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+<path d="M 80 73 Q 85 70 90 73" stroke="#3D2818" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+<!-- Cheeks -->
+<ellipse cx="58" cy="86" rx="3" ry="2" fill="#E8A398" opacity="0.5"/>
+<ellipse cx="92" cy="86" rx="3" ry="2" fill="#E8A398" opacity="0.5"/>
+
+<!-- Smile -->
+<path d="M 65 92 Q 75 100 85 92" stroke="#3D2818" stroke-width="2" fill="none" stroke-linecap="round">
+<animate attributeName="d" values="M 65 92 Q 75 100 85 92; M 65 92 Q 75 102 85 92; M 65 92 Q 75 100 85 92" dur="2s" repeatCount="indefinite"/>
+</path>
+
+<!-- Neck -->
+<path d="M 50 95 L 45 105 L 50 115 L 100 115 L 105 105 L 100 95 Z" fill="#C8956D"/>
+
+<!-- CHEF HAT -->
+<g>
+<animateTransform attributeName="transform" type="translate" values="0 0; 0 -2; 0 0" dur="2.5s" repeatCount="indefinite"/>
+<!-- Hat band -->
+<rect x="45" y="50" width="60" height="10" rx="2" fill="#FFFFFF"/>
+<!-- Hat puffy top -->
+<ellipse cx="60" cy="38" rx="14" ry="14" fill="#FFFFFF"/>
+<ellipse cx="75" cy="32" rx="16" ry="16" fill="#FFFFFF"/>
+<ellipse cx="92" cy="38" rx="13" ry="13" fill="#FFFFFF"/>
+<ellipse cx="75" cy="44" rx="20" ry="10" fill="#FFFFFF"/>
+<!-- Subtle shading lines on hat -->
+<path d="M 60 35 Q 62 30 65 32" stroke="#E0E0E0" stroke-width="1" fill="none" opacity="0.6"/>
+<path d="M 80 28 Q 84 26 87 30" stroke="#E0E0E0" stroke-width="1" fill="none" opacity="0.6"/>
+</g>
+</g>
+
+<!-- Embers floating from grill near Tommy -->
+<g>
+<animateTransform attributeName="transform" type="translate" values="0 0; 0 -3; 0 0" dur="2s" repeatCount="indefinite"/>
+<g>
+<animate attributeName="opacity" values="1;0.8;1" dur="0.8s" repeatCount="indefinite"/>
+<circle cx="65" cy="195" r="3" fill="#FFD93D"/>
+<circle cx="80" cy="200" r="2.5" fill="#FF6B35"/>
+<circle cx="95" cy="195" r="3" fill="#FFD93D"/>
+</g>
+</g>
+</g>
+
+<!-- Confetti (kept from original) -->
+<g>
+<rect x="80" y="140" width="6" height="14" fill="#FF6B35">
+<animate attributeName="y" values="140;800;140" dur="6s" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="0 83 147; 360 83 147" dur="6s" repeatCount="indefinite"/>
+</rect>
+<rect x="180" y="80" width="6" height="14" fill="#FFD93D">
+<animate attributeName="y" values="80;820;80" dur="7s" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="0 183 87; -360 183 87" dur="7s" repeatCount="indefinite"/>
+</rect>
+<rect x="280" y="60" width="6" height="14" fill="#06D6A0">
+<animate attributeName="y" values="60;840;60" dur="8s" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="0 283 67; 360 283 67" dur="8s" repeatCount="indefinite"/>
+</rect>
+<rect x="400" y="100" width="6" height="14" fill="#118AB2">
+<animate attributeName="y" values="100;800;100" dur="6.5s" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="0 403 107; -360 403 107" dur="6.5s" repeatCount="indefinite"/>
+</rect>
+<rect x="520" y="180" width="6" height="14" fill="#EF476F">
+<animate attributeName="y" values="180;820;180" dur="7.5s" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="0 523 187; 360 523 187" dur="7.5s" repeatCount="indefinite"/>
+</rect>
+<rect x="600" y="80" width="6" height="14" fill="#FFD93D">
+<animate attributeName="y" values="80;820;80" dur="8.5s" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="0 603 87; -360 603 87" dur="8.5s" repeatCount="indefinite"/>
+</rect>
+<rect x="120" y="200" width="6" height="14" fill="#06D6A0">
+<animate attributeName="y" values="200;820;200" dur="9s" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="0 123 207; 360 123 207" dur="9s" repeatCount="indefinite"/>
+</rect>
+<rect x="240" y="120" width="6" height="14" fill="#EF476F">
+<animate attributeName="y" values="120;820;120" dur="7.2s" repeatCount="indefinite"/>
+<animateTransform attributeName="transform" type="rotate" values="0 243 127; -360 243 127" dur="7.2s" repeatCount="indefinite"/>
+</rect>
+</g>
+
+</g>
+
+<rect x="20" y="20" width="640" height="860" rx="24" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.4"/>
+
+</svg>
+
+<!-- Live countdown -->
+<div class="countdown-box">
+  <div class="countdown-label">COUNTDOWN TO PARTY</div>
+  <div class="countdown-grid">
+    <div class="cd-cell"><div class="cd-num" id="cd-days">--</div><div class="cd-unit">DAYS</div></div>
+    <div class="cd-cell"><div class="cd-num" id="cd-hours">--</div><div class="cd-unit">HOURS</div></div>
+    <div class="cd-cell"><div class="cd-num" id="cd-mins">--</div><div class="cd-unit">MINS</div></div>
+    <div class="cd-cell"><div class="cd-num" id="cd-secs">--</div><div class="cd-unit">SECS</div></div>
+  </div>
+</div>
+
+<!-- RSVP button -->
+<div class="rsvp-section">
+  <a href="sms:+17432610294?&body=Yo%20Tommy!%20I'm%20in%20for%20your%20birthday%20June%2017th%20%F0%9F%94%A5" class="rsvp-btn">
+    RSVP NOW
+  </a>
+  <div class="rsvp-sub">Tap to text Tommy</div>
+  <div class="rsvp-phone">743-261-0294</div>
+</div>
+
+</div>
+
+<script>
+(function(){
+  var target = new Date('2026-06-20T18:00:00').getTime();
+  var d = document.getElementById('cd-days');
+  var h = document.getElementById('cd-hours');
+  var m = document.getElementById('cd-mins');
+  var s = document.getElementById('cd-secs');
+  function tick(){
+    var diff = target - new Date().getTime();
+    if(diff <= 0){
+      d.textContent = '0'; h.textContent = '0'; m.textContent = '0'; s.textContent = '0';
+      return;
+    }
+    d.textContent = Math.floor(diff / 86400000);
+    h.textContent = Math.floor((diff % 86400000) / 3600000);
+    m.textContent = Math.floor((diff % 3600000) / 60000);
+    s.textContent = Math.floor((diff % 60000) / 1000);
+  }
+  tick();
+  setInterval(tick, 1000);
+})();
+</script>
+</body>
+</html>
